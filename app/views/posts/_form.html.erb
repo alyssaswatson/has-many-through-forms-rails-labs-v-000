@@ -1,6 +1,6 @@
-<%= form_for @post.build do |f| %>
-  <%= f.label :post_title %>
-  <%= f.text_field :post_title %>
+<%= form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
   <%= f.label :content %>
   <%= f.text_field :content %>
   <%= f.collection_select :user_id, User.all, :id, :username, include_blank: 'New User'%>
